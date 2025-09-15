@@ -9,8 +9,8 @@ Make sure Git and Git-LFS are installed. The Git repository uses Git LFS to stor
 1. Open MATLAB (current version tested for MATLAB R2024b).
 2. Navigate to the 'HOME' tab, and then click 'New' > 'Project', 'From Git'.
     1. Ensure 'Source control tool' uses Git
-    2. For the 'Repository path', enter: "https://github.com/raykyeung/MicrochipCriticalLiftOff"
-    3. For the 'Sandbox", select a suitable location for the local repository (ex. "C:\Users\USERNAME\LocalGitRepo\MicrochipCriticalLiftOff")
+    2. For the 'Repository path', enter: "https://github.com/raykyeung/Microchip2DPostParticleTracking"
+    3. For the 'Sandbox", select a suitable location for the local repository (ex. "C:\Users\USERNAME\LocalGitRepo\https://github.com/raykyeung/Microchip2DPostParticleTracking")
     4. Click 'Retrieve' and allow MATLAB to pull all files. Project dependencies and tracking are handled by the .prj file and 'resources' folder.
 
 ## Structure of the MATLAB Project
@@ -20,14 +20,14 @@ Make sure Git and Git-LFS are installed. The Git repository uses Git LFS to stor
 1. Calls B2KVideoSummaryBGM.m to summarize videos and identify the start and end frames to analyze.
 2. Calls B2KCoordinateSystemBGM.m to perform microchannel wall detection and image calibration.
 3. Calls B2KParticleTrackingBGM.m to perform object-oriented particle tracking.
-4. Export all figures
+4. Export all data and figures (default under 'Downloads')
 5. Save log file containing dependency information and required program files
 
 **Batch1pTracking_ObjectOriented.m** - Main script to perform particle tracking using blob detection and a Gaussian mixture model. Briefly, the script performs the following:
 1. Calls B2KVideoSummaryOO.m to summarize videos and identify the start and end frames to analyze.
 2. Calls B2KCoordinateSystemOO.m to perform microchannel wall detection and image calibration.
 3. Calls B2KParticleTrackingOO.m to perform object-oriented particle tracking.
-4. Export all figures
+4. Export all data and figures (default under 'Downloads')
 5. Save log file containing dependency information and required program files
 
 ### Functions
