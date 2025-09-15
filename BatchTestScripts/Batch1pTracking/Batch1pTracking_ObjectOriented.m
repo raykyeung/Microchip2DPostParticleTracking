@@ -376,7 +376,7 @@ for i = loopStart:loopEnd %change length(fds.Files) to accomodate single and bat
             thresh_quartiles_idx, thresh_quartiles_pks, thresh_quartiles_count, thresh_gesd_idx, thresh_gesd_pks, thresh_gesd_count,...
             TF,S1,S2,...
             ipt,residual,...
-            L_startBlockStd,R_endBlockStd] = B2KVideoSummary01(vidObj,myFigures,flagDebug,flagRunWithDisplay,addedFrames);
+            L_startBlockStd,R_endBlockStd] = B2KVideoSummaryOO(vidObj,myFigures,flagDebug,flagRunWithDisplay,addedFrames);
     catch ME
         %% Manually add appropriate error message(s) from function call(s)
         % Construct a detailed error message including the stack trace
@@ -707,7 +707,7 @@ for i = loopStart:loopEnd %change length(fds.Files) to accomodate single and bat
         [I, CS, WR, CR, NR, x_pos_caption, y_pos_caption,myFigures,...
             resizeScale, edgeMethod, R_highest_resolution,T_highest_resolution,...
             H_highest_numpeaks,Hlines_highest_fillgap,Hlines_highest_minlength,...
-            Hlines_highest,Hlines_highest_num] = B2KCoordinateSystem(vidObj,L_start_orig, HLcorrectionidx,EXP_W_channel,CS_string,myFigures,flagDebug,flagRunWithDisplay);
+            Hlines_highest,Hlines_highest_num] = B2KCoordinateSystemOO(vidObj,L_start_orig, HLcorrectionidx,EXP_W_channel,CS_string,myFigures,flagDebug,flagRunWithDisplay);
     catch ME
         %% Manually add appropriate error message(s) from function call(s)
         % Construct a detailed error message including the stack trace
@@ -894,7 +894,7 @@ for i = loopStart:loopEnd %change length(fds.Files) to accomodate single and bat
 
     %
     try
-        [myFigures,position_x_CS,position_y_CS] = B2KParticleTracking03_orig(i,vidObj,myFigures,onePTrackOutputFolderPath,L_start,R_end,tFrames,nFrames,I,CS,x_pos_caption,y_pos_caption,EXP_actualframerate,flagDebug,flagRunWithDisplay);
+        [myFigures,position_x_CS,position_y_CS] = B2KParticleTrackingOO(i,vidObj,myFigures,onePTrackOutputFolderPath,L_start,R_end,tFrames,nFrames,I,CS,x_pos_caption,y_pos_caption,EXP_actualframerate,flagDebug,flagRunWithDisplay);
     catch ME
         %% Manually add appropriate error message(s) from function call(s)
         % Construct a detailed error message including the stack trace

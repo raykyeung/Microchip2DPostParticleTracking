@@ -7,17 +7,6 @@
 % Victor G. J. Rodgers Dept. of Bioengineering, Univ. of California, Riverside
 % William H. Grover, Dept. of Bioengineering, Univ. of California, Riverside
 % Philip L. Brisk Dept. of Computer Science, Univ. of California, Riverside
-%
-% [STATUS] - incomplete
-% [CURRENT FUNC]
-% -
-% [WORKING ON]
-% -
-% [BUGS]
-% -
-% [STILL NEED]
-% -
-%
 
 function myFigures = B2KMyFigures(myFigures,flagRunWithDisplay)
 
