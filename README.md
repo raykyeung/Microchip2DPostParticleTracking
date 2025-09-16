@@ -1,6 +1,7 @@
 # Microchip2DPostParticleTracking
 
 ## MATLAB Project for 2-D post-experimental, blob and object-aligned detection and tracking of microchips using a monocular camera setup
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17128126.svg)](https://doi.org/10.5281/zenodo.17128126)
 
 This code was run using MATLAB R2024b (using the Java-based desktop and graphics system) on Windows 10/11. File paths need to be modified for Unix-based platforms (macOS, Linux). MATLAB versions R2025a and above, which uses a new environment based on HTML and JavaScript, may cause unintended graphical issues.
 
